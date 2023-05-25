@@ -1,0 +1,117 @@
+.main
+{
+    background-image: url("sky.jpg");
+}
+.head
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2px;
+}
+.happy
+{
+    border: 1px;;
+    height:fit-content;
+    width: fit-content;
+    background-color: orange;
+}
+.in
+{
+    border: 1px;;
+    height:fit-content;
+    width: fit-content;
+    background-color: white;
+}
+.day
+{
+    border: 1px;;
+    height:fit-content;
+    width: fit-content;
+    background-color: green;
+}
+.sun
+{
+    margin-top: 30px;
+    margin-left: 1145px;
+    position: relative;
+    animation-name: ex;
+    animation-duration:10s;
+
+}
+@keyframes ex
+{
+    0%{
+        right:0px;
+        top:0px;
+    }
+    25%
+    {
+        top:0px;
+        right:50px;
+    }
+    50%
+    {
+        
+        right: 100px;
+        top:0px;
+    }
+    75%
+    {
+        right: 150px;
+        top:0px
+    }
+
+    100%
+    {
+        right: 150px;
+        top:0px
+    }
+}
+
+.car
+{
+    z-index: 1;
+    position:absolute;
+    margin-top: 350px;
+    margin-left: 450px;
+}
+.flag
+{
+    z-index: 1;
+    position:absolute;
+    margin-top: 330px;
+    margin-left: 710px;
+}
+
+.t1
+{
+    z-index: 1;
+    position:absolute;
+    margin-top: 460px;
+    margin-left: 485px;
+    animation: rotate 4s infinite;
+}
+@keyframes rotate
+{
+    100%
+    {
+        transform: rotate(180deg);
+    }
+}
+.t2
+{
+
+    z-index: 1;
+    position:absolute;
+    margin-top: 460px;
+    margin-left: 730px;
+    animation: rotate1 4s infinite;
+}
+@keyframes rotate1
+{
+    100%
+    {
+        transform: rotate(180deg);
+    }
+}
