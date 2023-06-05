@@ -1,6 +1,15 @@
+body{
+    
+
+    border: 10px solid;
+    border-color: white green white orange;
+    opacity: 9;
+}
 .main
 {
     background-image: url("sky.jpg");
+    position: absolute;
+    z-index: -1;
 }
 .head
 {
@@ -83,7 +92,36 @@
     margin-top: 330px;
     margin-left: 710px;
 }
-
+.road
+{
+    animation: way 5s linear infinite;
+    position: relative;
+    background-repeat: repeat-x;
+    height:250px;
+}
+@keyframes way
+{
+    100% {
+        transform: translateX(-1400px);
+    }
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.city
+{
+    position: relative;
+    animation: city 10s linear infinite;
+    background-repeat: repeat-x;
+    height:250px;
+}
+@keyframes city
+{
+    100% {
+        transform: translateX(-1400px);
+    }
+}
 .t1
 {
     z-index: 1;
