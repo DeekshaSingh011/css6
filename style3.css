@@ -1,15 +1,12 @@
 body{
-    
 
-    border: 10px solid;
+    border: 5px solid;
     border-color: white green white orange;
     opacity: 9;
 }
 .main
 {
     background-image: url("sky.jpg");
-    height:889px;
-    width:1290px;
     position: absolute;
     z-index: -1;
 }
@@ -82,24 +79,29 @@ body{
 
 .car
 {
-    z-index: 1;
+    z-index: 2;
     position:absolute;
     margin-top: 350px;
     margin-left: 450px;
 }
 .flag
 {
-    z-index: 1;
+    z-index: 2;
     position:absolute;
     margin-top: 330px;
     margin-left: 710px;
 }
 .road
 {
-    animation: way 5s linear infinite;
     position: relative;
+    display:block;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:1;
     background-repeat: repeat-x;
-    height:250px;
+    height:200px;
+    animation: way 5s linear infinite;
 }
 @keyframes way
 {
@@ -109,24 +111,39 @@ body{
 }
 img {
     overflow-clip-margin: content-box;
-    overflow: clip;
+    overflow: clip; 
 }
 .city
 {
     position: relative;
+    display:block;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:1;
+    background-repeat: repeat-x;
+    height:200px;
+    animation: way 5s linear infinite;
+
+    background-image:url("city.png");
+    display:block;
+    position: relative;
+    height:200px;
+    bottom:0;
+    left:0;
+    right:0;
     animation: city 10s linear infinite;
     background-repeat: repeat-x;
-    height:250px;
 }
 @keyframes city
 {
     100% {
         transform: translateX(-1400px);
-    }
+    } 
 }
 .t1
 {
-    z-index: 1;
+    z-index: 2;
     position:absolute;
     margin-top: 460px;
     margin-left: 485px;
@@ -142,7 +159,7 @@ img {
 .t2
 {
 
-    z-index: 1;
+    z-index: 2;
     position:absolute;
     margin-top: 460px;
     margin-left: 730px;
