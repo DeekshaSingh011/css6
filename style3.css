@@ -1,5 +1,6 @@
-body
-{
+body{
+    
+
     border: 10px solid;
     border-color: white green white orange;
     opacity: 9;
@@ -7,6 +8,8 @@ body
 .main
 {
     background-image: url("sky.jpg");
+    height:889px;
+    width:1290px;
     position: absolute;
     z-index: -1;
 }
