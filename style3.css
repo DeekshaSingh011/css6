@@ -94,12 +94,12 @@ body{
 .road
 {
     position: relative;
+    background-repeat: repeat-x;
     display:block;
     bottom:0;
     left:0;
     right:0;
     z-index:1;
-    background-repeat: repeat-x;
     height:200px;
     animation: way 5s linear infinite;
 }
@@ -116,6 +116,7 @@ img {
 .city
 {
     background-image:url("city.png");
+    background-repeat: repeat-x;
     display:block;
     position: relative;
     height:200px;
@@ -123,7 +124,7 @@ img {
     left:0;
     right:0;
     animation: city 10s linear infinite;
-    background-repeat: repeat-x;
+
 }
 @keyframes city
 {
